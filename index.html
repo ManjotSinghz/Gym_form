@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sabbal Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Train+One&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        height: 900px;
+        color: white;
+    }
+
+    .left {
+        cursor: pointer;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .left img {
+        height: 47px;
+        width: 90px;
+        filter: invert(1);
+    }
+
+    .left div {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .mid {
+        font-family: 'Train One', 'Cursive';
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 24px;
+        top: 33px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 19px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 24px 17px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(137, 196, 224);
+    }
+
+    .btn {
+        margin: 0px 10px;
+        background-color: rgb(35, 36, 23);
+        color: white;
+        padding: 4px 9px;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(157, 165, 163);
+    }
+
+    .container {
+        border: 3px solid rgb(97, 199, 199);
+        margin: 115px 60px;
+        padding: 42px 82px;
+        border-radius: 30px;
+        width: 25%;
+        font-size: 10px;
+    }
+
+    .form-group input {
+        border: 2px solid rgb(25, 119, 111);
+        text-align: center;
+        margin: 4px auto;
+        padding: 8px 45px;
+        border-radius: 23px;
+        font-family: 'Permanent Marker', 'Cursive';
+    }
+
+    .container button {
+        border: 5px solid aqua;
+        border-radius: 23px;
+        width: 75%;
+        display: block;
+        margin: 20px 6px;
+    }
+
+    .container h1 {
+        font-weight: bold;
+        color: rgb(219, 243, 243);
+        font-size: 23px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div class="logo">
+                Jot Fitness
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About us</a> </li>
+                <li><a href="#">Contact us</a> </li>
+                <li><a href="#">Fitness Calcuator</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <Button class="btn">Call us</Button>
+            <a href="jot04singh@gmail.com">
+                <Button class="btn">Email Us</Button>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of Delhi Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Age"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Gender"></div>
+            <div class="form-group"><input type="text" name="" placeholder="Enter your Phone No."></div>
+            <div class="form-group">
+                <button class="btn">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
